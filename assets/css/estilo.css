@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik+Mono+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+ }
+ .container{
+     max-width: 1200px;
+     margin: 0px auto;
+ }
+ header{
+    background-size: cover;
+    padding: 0px 0px 100px 0px;
+ }
+    .header__menu{
+         display: flex;
+     }
+     /* Cor de fundo do menu principal */
+     .header__menu--cor{
+         background-color: rgba(229, 229, 229, 0.5);
+         text-align: center;
+     }
+     /* Cor e posição do menu hamburger */
+     .header__menu--hamburger{
+         background-color: rgba(241, 196, 15, 0.7);
+         border: none;
+         padding: 0px;
+         margin: 0px 0px 10px 0px;
+     }
+     @media (min-width: 600px){
+        .header__menu--item{
+            padding: 10px;
+        } 
+        .header__menu--item a {
+           text-decoration: none;
+           color: black;
+           font-size: 16px;
+       }
+    }
+    /* Esconde o menu principal */
+    header nav{
+        display: none;
+     }
+     /* Mostra o menu principal se for maior de 600px */
+     @media (min-width: 600px){
+        header nav{
+            display: flex;
+            justify-content: center;
+        } 
+     }
+     /* imagem hamburger */
+     header img {
+         width: 100%;
+         margin: 50px 10px 0px 0px;
+     }
+     /* Só aparece se for menor de 600px */
+        @media (min-width: 600px){
+            header img{
+            display: none; 
+            } 
+        }
+    /* Configuração dos títulos e subtítulos */
+    .header__title{
+        font-size: 29px;
+        line-height: 34px;
+        text-align: center;
+        background-color: rgba(241, 196, 15, 0.7);
+        margin: 0px 0px 10px 0px;
+        padding: 25px 0px 0px 0px;
+        font-weight: inherit;
+     }
+     @media (min-width: 600px){
+         .header__title{
+            font-size: 36px;
+            line-height: 42px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 20px;
+         }
+     }
+    .header__title--sub1{
+        font-size: 29px;
+        line-height: 34px;
+        text-align: center;
+        background-color: rgba(241, 196, 15, 0.7);
+        margin: 0 25px 0px 25px ;
+        padding: 2px 2px 2px 2px;
+        font-weight: inherit;
+     }
+     @media (min-width: 600px){
+        .header__title--sub1{
+            font-size: 26px;
+            line-height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+     }  
+    .header__title--sub2{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        background-color: rgba(241, 196, 15, 0.7);
+        margin: 10px 100px 0px 100px ;
+        font-weight: inherit;
+     }
+     @media (min-width: 600px){
+         .header__title--sub2{
+            font-size: 20px;
+            line-height: 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 200px;
+        }
+     }
+    .header__title--sub3{
+        font-size: 18px;
+        line-height: 34px;
+        text-align: center;
+        background-color: rgba(241, 196, 15, 0.7);
+        margin: 10px 50px 0px 50px ;
+        font-weight: inherit;
+     }
+     @media (min-width: 600px){
+        .header__title--sub3{
+            font-size: 20px;
+            line-height: 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+    }
+    /* Define o menu principal como display flex */
+    @media (min-width: 600px){
+         header ul{
+             display: flex;
+             flex-direction: row;
+             list-style: none;
+         } 
+     }
+     /* Posicionando o botão inscrição no mobile */
+    .header__inscricao {
+     display: flex;
+     justify-content: center;
+     }
+     @media (min-width: 600px){
+         .header__inscricao{
+         display: none;
+         } 
+     }
+     .header__inscricao a{
+         margin: 10px;
+         text-decoration: none;
+         background-color: #E74C3C;  
+         padding: 6px; 
+         color: white;
+         border-radius: 6px;
+     }
+     @media (min-width: 600px){
+     .header__inscricao--barraMenu{
+        background-color: #E74C3C;
+        border-radius: 5px;
+        padding: 5px;
+        color: white;
+        }
+    }
+ 
+     /*Seção do corpo da página*/
+    .titulo__texto{
+        font-size: 30px;
+        margin: 50px 20px 30px 20px;
+        text-align: center;
+        font-weight: inherit;
+     }
+     @media (min-width: 600px){
+         .titulo__texto{
+             font-size: 32px;
+             line-height: 37px;
+         }
+     }
+     
+    .subtitulo__texto{
+         font-size: 28px;
+         margin: 5px 20px 30px 20px;
+         text-align: center;
+         font-weight: inherit;
+     }
+ 
+     @media (min-width: 600px){
+         .subtitulo__texto{
+             font-size: 30px;
+             line-height: 35px;
+         }
+     }
+ 
+     .texto__corpo{
+         font-size: 18px;
+         line-height: 21px;
+     }
+ 
+     .texto__corpo p {
+         margin-bottom: 20px;
+         margin: 20px;
+     }
+     @media (min-width: 600px){
+         .texto__corpo{
+             font-size: 20px;
+             line-height: 23px;
+         }
+     }
+ 
+     /* Tabela de programação */ 
+     .tabela {
+         border: 1px solid black;
+         border-collapse: collapse;
+         width: 100%;
+         /* margin: 10px auto;  */
+     }
+     .tabela tr {
+         padding: 20px;
+         text-align: left;
+     }
+     .tabela th {
+        border: 1px solid black;
+        background-color: #E5E5E5;
+        padding: 20px;
+        font-size: 18px;
+    }
+     .tabela td {
+         border-left: 1px solid black;
+         padding: 20px;
+         font-size: 14px;
+     }
+     .tabela__margin{
+         margin: 20px;
+     }
+
+     /* Mapa */
+     .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+     
+     /* Seção de contato */ 
+     .sessao_contato__input {
+         border: 1px #F1C40F solid;
+         border-radius: 5px;
+         margin: 25px;
+         width: 322px;
+         left: 29px;
+         height: 51px; 
+     }
+     .sessao_contato__input--mensagem {         
+         border: 1px #F1C40F solid;
+         border-radius: 5px;
+         margin-top:10px;
+         width: 322px;
+         height: 138px; 
+         resize: none;
+     }
+     @media (min-width: 600px){
+         .sessao_contato__input--mensagem {
+            /* position: absolute; */
+            width: 424px;
+            height: 138px;
+            left: 828px;
+            top: 2881px;
+             width: 800px;
+             height: 300px; 
+           
+         }
+     }
+ 
+     .sessao_contato__blocoA{
+         display: flex;
+         flex-direction: column;
+         
+     }
+ 
+     .sessao_contato__blocoB{
+         display: flex;
+         flex-direction: column;
+        
+     }
+     .sessao_contato__blocoB label{
+         display: flex;
+         flex-direction: column;
+         margin: 0px 0px 0px 30px;
+     }
+     .sessao_contato__blocoC{
+         display: flex;
+         flex-direction: column;
+         margin: 25px;
+     }
+ 
+     .sessao_contato__btn_Enviar{
+         background-color:#F1C40F;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         padding: 10px;
+         margin-top: 20px;
+         width: 150px;
+     }
+ 
+     
+     @media (min-width: 600px){
+         .sessao_contato__blocoD{
+             display: flex;
+             flex-direction: row;
+         }
+     }
+ 
+     /*Rodapé*/ 
+     footer{
+        background-color: #F1C40F;
+        text-align: center;
+        color: white;
+        padding: 30px;
+        /* padding-bottom: 50px; */
+        font-size: 18px;
+        line-height: 21px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     footer p1{
+        font-weight: bolder;
+     }
+    
