@@ -123,7 +123,7 @@
      }
     .header__title--sub3{
         font-size: 18px;
-        line-height: 34px;
+        line-height: 21px;
         text-align: center;
         background-color: rgba(241, 196, 15, 0.7);
         margin: 10px 50px 0px 50px ;
@@ -224,7 +224,6 @@
          border: 1px solid black;
          border-collapse: collapse;
          width: 100%;
-         /* margin: 10px auto;  */
      }
      .tabela tr {
          padding: 20px;
@@ -260,75 +259,82 @@
         position:absolute;
     }
      
-     /* Seção de contato */ 
-     .sessao_contato__input {
-         border: 1px #F1C40F solid;
-         border-radius: 5px;
-         margin: 25px;
-         width: 322px;
-         left: 29px;
-         height: 51px; 
+     /* contato */
+     form label{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px 0px 25px;
      }
-     .sessao_contato__input--mensagem {         
-         border: 1px #F1C40F solid;
-         border-radius: 5px;
-         margin-top:10px;
-         width: 322px;
-         height: 138px; 
-         resize: none;
+     @media(min-width: 600px){
+        form label{
+            display: inline-block;
+            position:static;
+        }
+    }
+
+     form input{
+        border: 1px #F1C40F solid;
+        border-radius: 5px;
+        margin: 10px 25px;
+        width: 322px;
+        left: 29px;
+        height: 51px;
      }
-     @media (min-width: 600px){
-         .sessao_contato__input--mensagem {
-            /* position: absolute; */
-            width: 424px;
-            height: 138px;
-            left: 828px;
-            top: 2881px;
-             width: 800px;
-             height: 300px; 
-           
-         }
+     @media(min-width: 600px){
+        form input{
+            display: inline;
+            margin: 10px 0 25px;
+            width: 60%;
+        }
+    }
+     form textarea{
+        border: 1px #F1C40F solid;
+        border-radius: 5px;
+        margin: 0px 25px;
+        margin-top:10px;
+        width: 322px;
+        height: 138px;
      }
- 
-     .sessao_contato__blocoA{
-         display: flex;
-         flex-direction: column;
-         
+     @media(min-width: 600px){
+        form textarea{
+            display: inline-block;
+            width: 60%;
+            margin-right: 20px;
+            float: right;
+        }
+    }   
+     .contato__button{
+        background-color:#F1C40F;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 20px;
+        width: 150px;
+        float: left;
      }
- 
-     .sessao_contato__blocoB{
-         display: flex;
-         flex-direction: column;
-        
-     }
-     .sessao_contato__blocoB label{
-         display: flex;
-         flex-direction: column;
-         margin: 0px 0px 0px 30px;
-     }
-     .sessao_contato__blocoC{
-         display: flex;
-         flex-direction: column;
-         margin: 25px;
-     }
- 
-     .sessao_contato__btn_Enviar{
-         background-color:#F1C40F;
-         color: white;
-         border: none;
-         border-radius: 5px;
-         padding: 10px;
-         margin-top: 20px;
-         width: 150px;
-     }
- 
-     
-     @media (min-width: 600px){
-         .sessao_contato__blocoD{
-             display: flex;
-             flex-direction: row;
-         }
-     }
+     .clearfix {
+        margin-block-end: 20px;
+        clear:both;
+    }
+
+    @media(min-width: 600px){
+        .contato__desktop--1{
+            float: left;
+            width:50%; 
+        }
+        .contato__desktop--2{
+            float: right;
+            width:50%;        
+        }
+        .contato__button{
+            float: right;
+        }
+        .clearfix {
+            margin-block-end: 20px;
+            clear:both;
+        }
+    }
  
      /*Rodapé*/ 
      footer{
@@ -336,7 +342,6 @@
         text-align: center;
         color: white;
         padding: 30px;
-        /* padding-bottom: 50px; */
         font-size: 18px;
         line-height: 21px;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
